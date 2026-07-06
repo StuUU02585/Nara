@@ -102,7 +102,7 @@
         <article><span>01</span><p>Diakui secara nasional maupun internasional</p></article>
         <article><span>02</span><p>Meningkatkan kompetensi dan peluang karier</p></article>
         <article><span>03</span><p>Mendukung pemenuhan kebutuhan regulasi perusahaan</p></article>
-        <article><span>04</span><p>Didampingi oleh praktisi yang berpengalaman</p></article>
+        <article><span>04</span><p>Pembelajaran yang terstruktur dengan ujian kompetensi</p></article> <!-- 5. Perbaikan Copywriting pada nomor 4-->
     </div>
 </section>
 

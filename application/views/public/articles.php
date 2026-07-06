@@ -1,7 +1,7 @@
 <section class="page-hero article-hero">
     <p class="eyebrow">Artikel & Insights</p>
     <h1>Insight HR, leadership, dan dunia kerja Indonesia</h1>
-    <p>Artikel terhubung dengan ProleadIndonesia.com sebagai media partner.</p>
+    <p>Update regulasi ketenagakerjaan, tips praktis HR, best practices manajemen SDM, dan analisis isu-isu terkini yang sedang hangat di dunia kerja Indonesia yang terhubung langsung dengan ProleadIndonesia.com sebagai media partner kami yang merupakan portal online para leader di Indonesia. Sehingga setiap artikel ditulis atau dikurasi dengan sebaik mungkin agar memberikan nilai langsung bagi pembaca.</p>
 </section>
 
 <section class="section article-list-section">

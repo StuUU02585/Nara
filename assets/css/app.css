@@ -1799,12 +1799,12 @@ body.flyer-modal-open {
     max-width: 980px;
     font-size: clamp(36px, 3.5vw, 54px);
     line-height: 1.1;
-    text-align: justify;
+    text-align: left; /* Perubahan HERO dari justify ke left */
     text-wrap: balance;
 }
 .article-hero p:not(.eyebrow) {
     color: #dce9f4;
-    text-align: justify;
+    text-align: left; /* Perubahan HERO dari justify ke left */
 }
 .section.article-list-section {
     background: #dff3ff;
@@ -4159,11 +4159,19 @@ body.nav-open {
 }
 
 /* Tipografi Card */
-.carousel-3d-track .card h3 {
+/* CODINGAN LAMA */
+/*.carousel-3d-track .card h3 {         
     font-size: 1rem !important;
     color: #111 !important;
     margin: 2px 0 !important;
     font-weight: 700 !important;
+}*/
+
+/* CODINGAN BARU */
+/* 1. Paksa isi card profil dan teksnya rata kiri */
+.carousel-3d-track .card {
+    align-items: flex-start !important; 
+    text-align: left !important;        
 }
 
 .carousel-3d-track .card .trainer-role {
@@ -4179,7 +4187,8 @@ body.nav-open {
     line-height: 1.2 !important;
 }
 
-.carousel-3d-track .card .trainer-bio {
+/* CODINGAN LAMA */
+/*.carousel-3d-track .card .trainer-bio {
     font-size: 0.7rem !important;
     color: #666 !important;
     line-height: 1.3 !important;
@@ -4187,6 +4196,26 @@ body.nav-open {
     display: -webkit-box !important;
     -webkit-line-clamp: 3 !important;
     -webkit-box-orient: vertical !important;
+}*/
+
+/* CODINGAN BARU */
+/* 2. Matikan potongan 3 baris dan ubah jadi scroll vertikal */
+.carousel-3d-track .card .trainer-bio {
+    text-align: left !important;       
+    max-height: 85px !important;       /* Batasi tinggi box teks biar tidak merusak layout card */
+    overflow-y: auto !important;       /* Otomatis munculkan scrollbar internal jika teks panjang */
+    display: block !important;         /* Matikan sistem clamp box lama */
+    -webkit-line-clamp: none !important; 
+    padding-right: 4px;
+}
+
+/* 3. Opsional: Bikin scrollbar internalnya tipis biar estetik */
+.carousel-3d-track .card .trainer-bio::-webkit-scrollbar {
+    width: 4px;
+}
+.carousel-3d-track .card .trainer-bio::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
 }
 
 /* ==========================================================================

@@ -6,7 +6,9 @@
 
 <section class="section consultation-intro-section">
     <div class="consultation-intro-card">
-        <span>Konsultasi Gratis</span>
+        <!-- 1. Tambahin flyer di atas tulisan hubungi kami -->
+        <img src="<?= base_url('assets/img/flyer.png'); ?>" alt="Flyer Nara-HR" style="width: 100%; max-width: 500px; margin-bottom: 20px; border-radius: 8px;">
+        <!-- 2.Tagline udah dihapus -->
         <h2>Hubungi tim Nara-HR sekarang</h2>
         <p>Layanan ini sangat cocok bagi perusahaan yang ingin membangun sistem HR yang solid dan berkelanjutan dengan bantuan praktisi berpengalaman.</p>
     </div>
@@ -42,7 +44,14 @@
                     <option value="<?= html_escape($training['id']); ?>"><?= html_escape($training['program_title']); ?> - <?= html_escape($training['title']); ?> - <?= html_escape($training['schedule_label']); ?></option>
                 <?php endforeach; ?>
             </select>
+        </label> 
+
+        <!--3.penambahan placeholder Konsutasi -->
+
+        <label>Topik / Bidang Konsultasi
+            <input type="text" name="konsultasi_topik" placeholder="Misal: Penyusunan KPI, SOP, dsb." required>
         </label>
+
         <label>Agenda
             <select name="agenda_id">
                 <option value="">Belum memilih agenda khusus</option>
@@ -52,6 +61,6 @@
             </select>
         </label>
         <label>Kebutuhan / Pesan<textarea name="message" rows="5"><?= set_value('message'); ?></textarea></label>
-        <button class="btn primary" type="submit">Kirim Permintaan Konsultasi</button>
+        <button class="btn primary" type="submit">Kirim Pesan Kamu</button> <!-- 4. Kata "Konsultasi" udah dihilangkan -->
     </form>
 </section>
