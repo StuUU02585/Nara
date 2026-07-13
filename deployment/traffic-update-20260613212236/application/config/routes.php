@@ -1,0 +1,29 @@
+<?php
+$route['default_controller'] = 'home';
+$route['404_override'] = '';
+$route['translate_uri_dashes'] = false;
+
+$route['tentang-kami'] = 'home/about';
+$route['short-training'] = 'home/training';
+$route['in-house-training'] = 'home/inhouse';
+$route['sertifikasi'] = 'home/certification';
+$route['konsultansi'] = 'home/consulting';
+$route['trainer'] = 'home/trainers';
+$route['artikel'] = 'home/articles';
+$route['galeri'] = 'home/gallery';
+$route['kontak'] = 'home/contact';
+$route['daftar'] = 'register/index';
+$route['daftar/simpan'] = 'register/store';
+$route['trafik/poster'] = 'traffic/poster';
+$route['peserta'] = 'peserta/dashboard';
+$route['peserta/login'] = 'peserta/login';
+$route['peserta/dashboard'] = 'peserta/dashboard';
+$route['peserta/logout'] = 'peserta/logout';
+$route['admin'] = 'admin/index';
+$route['admin/slides'] = 'admin/slides';
+$route['admin/socials'] = 'admin/socials';
+$route['admin/programs'] = 'admin/programs';
+$route['admin/participants'] = 'admin/participants';
+$route['admin/mentors'] = 'admin/mentors';
+$route['admin/articles'] = 'admin/articles';
+$route['admin/clients'] = 'admin/clients';
