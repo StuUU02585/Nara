@@ -846,4 +846,3 @@ class Admin extends MY_Controller
         redirect('admin/jadwal_training');
     }
 }
-
